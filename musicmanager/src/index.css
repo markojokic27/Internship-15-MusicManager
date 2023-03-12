@@ -5,10 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
 }
-
+h1{
+  color: white;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background-color: aquamarine;
+}
+.album-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.album-form :nth-child(n){
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+}
+
+.album-form .album-form__text{
+  width: 46%;
+}
+.album-form :nth-child(n+3){
+  width: 30.65%;
+}
+button{
+  width: 100%;
+  background-color: rgb(201, 186, 186);
+  border-radius: 5px;
+  font-size: 10px;
+  color : white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.album-filters{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.album-filters :nth-child(n){
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+}
+.album-filters :nth-child(1){
+  padding: 0px;
+  font-size: 15px;
+  color: white;
+}
+h2{
+  color: white;
+}
+.album-info{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 5px;
+}
+.album-info :nth-child(n){
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+}
+.album-info :nth-child(n){
+  width: 29%;
+}
+
+.album-info :nth-child(6){
+  width: 10%;
+  background-color:rgb(209, 125, 125);;
+}
+.album-info :nth-child(5){
+  width: 50%;
+}
+.album-list h2{
+  margin-left: 5px;
+}
+.today
+{  border-top: 2px solid aqua;
+  border-bottom: 2px solid aqua;}
